@@ -1,0 +1,71 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar-content-wrapper {
+  display: flex; /* Asegura que el sidebar y el contenido estén en fila */
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+.sidebar {
+  width: 15%; /* El sidebar ocupa el 25% del ancho */
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem); /* Altura completa menos el header y footer */
+}
+
+.service-selector {
+  margin-top: 1rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-button {
+  background: #495057;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.service-icon {
+  margin-right: 0.5rem;
+}
+
+.service-button:hover {
+  background: #6c757d;
+}
+
+.content {
+  width: 75%; /* El contenido ocupa el resto del espacio */
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+  background-color: #fff;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 4rem); /* Altura completa menos el header y footer */
+  overflow-y: auto;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}

@@ -1,0 +1,43 @@
+<div class="layout">
+  <!-- Header o cualquier otro contenido que quieras agregar -->
+  <header>
+    <!-- Aquí el contenido del header si lo tienes -->
+  </header>
+
+  <!-- Wrapper para sidebar y contenido principal -->
+  <div class="sidebar-content-wrapper">
+    <div class="sidebar">
+      <div class="service-selector">
+        <h2>Seleccione un servicio</h2>
+        <div class="service-card">
+          <button class="service-button" (click)="selectService('products')">
+            <span class="service-icon">🛍️</span>
+            <span>Catálogo de Productos</span>
+          </button>
+          
+          <button class="service-button" (click)="selectService('orders')">
+            <span class="service-icon">📦</span>
+            <span>Consultar Órdenes</span>
+          </button>
+          
+          <button class="service-button" (click)="selectService('createOrder')">
+            <span class="service-icon">📝</span>
+            <span>Generación de Órdenes</span>
+          </button>
+
+          <button (click)="logout()">Cerrar sesión</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Mi Aplicación</p>
+  </footer>
+</div>

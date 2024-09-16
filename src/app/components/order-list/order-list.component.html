@@ -1,0 +1,21 @@
+<div class="order-list">
+  <h2>Order List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Cliente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ order.product }}</td>
+        <td>{{ order.quantity }}</td>
+        <td>{{ order.customerName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
