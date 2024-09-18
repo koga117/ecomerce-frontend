@@ -20,7 +20,4 @@ export class ProductListComponent implements OnInit {
       error: (error) => console.error('Error fetching products', error)
     });
   }
-  goToServiceSelector() {
-    this.router.navigate(['/serviceSelector']);
-  }
 }

@@ -28,7 +28,7 @@ export class OrderManagementComponent {
       next: (response) => {
         console.log('Order created successfully!');
         this.order = { ...this.initialOrder };
-        this.router.navigate(['/serviceSelector']);
+        this.router.navigate(['/orders']);
       },
       error: (error) => {
         console.error('Error creating order', error);
@@ -42,9 +42,5 @@ export class OrderManagementComponent {
       control.markAsTouched();
       control.updateValueAndValidity();
     });
-  }
-
-  goToServiceSelector() {
-    this.router.navigate(['/serviceSelector']);
   }
 }

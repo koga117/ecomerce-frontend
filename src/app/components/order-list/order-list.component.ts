@@ -21,8 +21,4 @@ export class OrderListComponent implements OnInit {
       error: (error) => console.error('Error fetching orders', error)
     });
   }
-  
-  goToServiceSelector() {
-    this.router.navigate(['/serviceSelector']);
-  }
 }
